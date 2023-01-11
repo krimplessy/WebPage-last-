@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+		h1 Салон красоты "Caramels"
+		link(rel="stylesheet", href="css/bootstrap-reboot.min.css")
+		link(rel="stylesheet", href="css/main.css")
+	body
+		.line
+		include includes/menu
+		.line
+		.Services
+			h2 Услуги
+			.block1
+				.block1-item1
+					img(src="img/model.jpeg")
+				.block1-item2
+					form
+						p Показать следующие категории: <br>
+							input(type="checkbox", name="category", value="0")
+							| &nbsp Стрижки <br>
+							//-&nbsp - неразрывный пробел
+							input(type="checkbox", name="category", value="1")
+							| &nbsp Укладки <br>
+							input(type="checkbox", name="category", value="2")
+							| &nbsp Текстурирование <br>
+							input(type="checkbox", name="category", value="3")
+							| &nbsp Восстановление и уход <br>
+							input(type="checkbox", name="category", value="4")
+							| &nbsp HONMA TOKYO <br>
+							input(type="checkbox", name="category", value="5")
+							| &nbsp Однотонное окрашивание <br>
+							input(type="checkbox", name="category", value="6")
+							| &nbsp Двухвцетное окрашивание <br>
+							input(type="checkbox", name="category", value="7")
+							| &nbsp Классическое мелирование <br>
+					form
+						p Выберите пол мастера:
+							select(name="gender")
+								option(value="0") Мужской
+								option(value="1") Женский
+								option(value="2", selected) Не имеет значения
+					form
+						p
+							label Минимальная стоимость процедуры(руб.):
+								input(type="number", name="Money", min=60, max=2500, value="60")
+						p
+							label Максимальная стоимость процедуры(руб.):
+								input(type="number", name="Money", min=2500, max=5950, value="5950")
+			table
+				tr
+					th(rowspan="2") Тип процедуры
+					th(rowspan="2") Название процедуры
+					th(colspan="3") Цена
+					th(rowspan="2") Мастер
+				tr
+					th Короткие
+					th Средние
+					th Длинные
+				//----------------Стрижки----------------
+				//-tr
+					//-th(colspan=6) Стрижки
+				tr
+					td Стрижки
+					td Стрижка "60+" до 15:00<sup>*</sup>
+					td 190
+					td 190
+					td 190
+					td Инга
+				tr
+					td  Стрижки
+					td Стрижка "60+" после 15:00<sup>*</sup>
+					td 340
+					td 340
+					td 340
+					td Инга
+				tr
+					td  Стрижки
+					td Стрижка каре "60+"
+					td 390
+					td 390
+					td 390
+					td Василиса
+				tr
+					td  Стрижки
+					td Женская стрижка
+					td 340
+					td 340
+					td 340
+					td Александра
+				tr
+					td  Стрижки
+					td Стрижка каре
+					td 890
+					td 890
+					td 890
+					td Александра
+				tr
+					td  Стрижки
+					td Коррекция челки
+					td 150
+					td 150
+					td 150
+					td Мария
+				tr
+					td  Стрижки
+					td Стрижка горячими ножницами
+					td 490
+					td 590
+					td 790
+					td Александра
+				tr
+					td  Стрижки
+					td Полировка волос
+					td 1190
+					td 1390
+					td 1690
+					td Ангелина
+				tr
+					td  Стрижки
+					td Сушка волос по форме
+					td 60
+					td 80
+					td 100
+					td Любой мастер
+					
+				//----------------Укладки----------------
+				//-tr
+					//-th(colspan=6) Укладки
+				tr
+					td Укладки
+					td Классическая укладка
+					td 250
+					td 450
+					td 590
+					td Марина
+				tr
+					td Укладки
+					td Коктейльная укладка
+					td 420
+					td 590
+					td 790
+					td Валентина
+				tr
+					td Укладки
+					td Вечерняя укладка
+					td 500
+					td 1200
+					td 1790
+					td Александра
+				tr
+					td Укладки
+					td Украшение прически
+					td 200
+					td 250
+					td 300
+					td Александра
+
+				//----------------Текстурирование----------------
+				//-tr
+					//-th(colspan=6) Текстурирование
+				tr
+					td Текстурирование
+					td Химическая завивка Wavex
+					td 990
+					td 1090
+					td 1190
+					td Софья]
+				tr
+					td Текстурирование
+					td Хим. завивка Wavex-<i>Вертикальная</i>
+					td 1170
+					td 1270
+					td 1370
+					td Софья
+				tr
+					td Текстурирование
+					td БИО-завивка Niagara
+					td 1050
+					td 1150
+					td 1250
+					td Маргарита
+				tr
+					td Текстурирование
+					td БИО-завивка Niagara-<i>Вертикальная</i>
+					td 1240
+					td 1340
+					td 1440
+					td Софья
+				tr
+					td Текстурирование
+					td Boost Up
+					td 5000
+					td 5000
+					td 1250
+					td Юлия
+				tr
+					td Текстурирование
+					td Fleecing
+					td 3000
+					td 3000
+					td 3000
+					td Анастасия
+				tr
+					td Текстурирование
+					td Карвинг
+					td 1100
+					td 1600
+					td 2000
+					td Александра
+
+				//----------------Восстановление и уход----------------
+				//-tr
+					//-th(colspan=6) Восстановление и уход
+				tr
+					td Восстановление и уход
+					td Глазирование Essex
+					td 995
+					td 1095
+					td 1260
+					td Милана
+				tr
+					td Восстановление и уход
+					td "Счастье для волос"
+					td 2900
+					td 3900
+					td 4900
+					td Ольга
+				tr
+					td Восстановление и уход
+					td Экранирование
+					td 290
+					td 390
+					td 590
+					td Юлия
+				tr
+					td Восстановление и уход
+					td Термокератин
+					td 650
+					td 750
+					td 1050
+					td Мария
+				tr
+					td Восстановление и уход
+					td Комплекс-уход EPLEX
+					td 500
+					td 600
+					td 800
+					td Виталий
+				tr
+					td Восстановление и уход
+					td Ламинирование
+					td 2100
+					td 2300
+					td 2600
+					td Александра
+				tr
+					td Восстановление и уход
+					td Маска NEWTONE
+					td 200
+					td 250
+					td 300
+					td Виталий
+				tr
+					td Восстановление и уход
+					td Термолечение
+					td 100
+					td 100
+					td 100
+					td Мария
+				tr
+					td Восстановление и уход
+					td Крио
+					td 390
+					td 490
+					td 590
+					td Марина
+				tr
+					td Восстановление и уход
+					td Зеркало
+					td 290
+					td 390
+					td 590
+					td Ольга
+
+				//----------------HONMA TOKYO----------------
+				//-tr
+					//-th(colspan=6) HONMA TOKYO
+				tr
+					td HONMA TOKYO
+					td Botox Capilar
+					td 1500
+					td 2500
+					td 3500
+					td Светлана
+				tr
+					td HONMA TOKYO
+					td Coffee Premium
+					td 3000
+					td 3500
+					td 5000
+					td Петр
+				tr
+					td HONMA TOKYO
+					td Coffee Premium Collagen
+					td 3200
+					td 3700
+					td 5200
+					td Петр
+				tr
+					td HONMA TOKYO
+					td Биксипластия
+					td 3200
+					td 3700
+					td 5200
+					td Александра
+
+				//----------------Однотонное окрашивание----------------
+				//-tr
+					//-th(colspan=6) Однотонное окрашивание
+				tr
+					td Однотонное окрашивание
+					td Краска Essex
+					td 990
+					td 1090
+					td 1190
+					td Олеся
+				tr
+					td Однотонное окрашивание
+					td De Luxe, Silver, Sense
+					td 1210
+					td 1370
+					td 1470
+					td Маргарита
+				tr
+					td Однотонное окрашивание
+					td Matrix Socolor Beauty
+					td 1470
+					td 1590
+					td 1700
+					td Жасмин
+				tr
+					td Однотонное окрашивание
+					td Matrix Color Sync
+					td 1630
+					td 1730
+					td 1860
+					td Жасмин
+				tr
+					td Однотонное окрашивание
+					td Осветление Estel
+					td 1205
+					td 1350
+					td 1550
+					td Михаил
+				tr
+					td Однотонное окрашивание
+					td Осветление Matrix
+					td 1590
+					td 1690
+					td 1790
+					td Михаил
+
+				//----------------Двухцветное окрашивание----------------
+				//-tr
+					//-th(colspan=6) Двухвцетное окрашивание
+				tr
+					td Двухцветное окрашивание
+					td Краска Essex
+					td 1690
+					td 1790
+					td 1990
+					td Олеся
+				tr
+					td Двухцветное окрашивание
+					td De Luxe, Silver, Sense
+					td 1890
+					td 2090
+					td 2400
+					td Маргарита
+				tr
+					td Двухцветное окрашивание
+					td Matrix Socolor Beauty
+					td 1940
+					td 2240
+					td 2550
+					td Жасмин
+				tr
+					td Двухцветное окрашивание
+					td Matrix Color Sync
+					td 2140
+					td 2440
+					td 2740
+					td Жасмин
+				tr
+					td Двухцветное окрашивание
+					td Окрашивание Омбре
+					td 2640
+					td 3240
+					td 3840
+					td Александра
+				tr
+					td Двухцветное окрашивание
+					td Осветление Airtouch
+					td 3950
+					td 4950
+					td 5950
+					td Виталий
+
+				//----------------Классическое мелирование----------------
+				//-tr
+					//-th(colspan=6) Классическое мелирование
+				tr
+					td Классическое мелирование
+					td Мелирование Essex
+					td 1150
+					td 1400
+					td 1540
+					td Диана
+				tr
+					td Классическое мелирование
+					td Мелирование De Luxe
+					td 1240
+					td 1540
+					td 1640
+					td Диана
+				tr
+					td Классическое мелирование
+					td Мелирование Haute Couture
+					td 1450
+					td 1740
+					td 1940
+					td Диана
+				tr
+					td Классическое мелирование
+					td Мелирование Matrix
+					td 1500
+					td 1790
+					td 1990
+					td Диана
+			.remark
+				p
+					|<sup>*</sup>Скидка по акции "60+" предоставляется клиентам,
+					|достигшим 60-летнего возраста, при предьявлении паспорта.
+		.line
+		include includes/menu
+		.line

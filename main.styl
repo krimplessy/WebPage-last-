@@ -1,0 +1,201 @@
+title(font-size, margin)
+  text-align center
+  font-family "Times New Roman", Times, serif
+  font-size font-size
+  //font-weight normal
+  margin margin auto
+  //color #193f6e
+masters()
+  .block1
+    display block
+    width 96%
+    text-align center
+    justify-content center
+    margin 0px auto
+    &-item1
+      float left
+      width 48%
+    &-item2
+      margin 0px 15px
+      padding 10px
+  img
+    width 100%
+    padding 15px
+  @media (max-width: 600px)
+    .block1
+      display flex
+      flex-direction column
+      &-item1
+        order 2
+        clear all
+        width 100%
+h1
+  title(40px, 15px)
+h2
+  title(32px, 10px)
+p
+  text-indent 30px
+  text-align justify
+body
+  font-family "Times New Roman", Times, serif
+  background-color #D5E8EF
+  font-size 20px
+.line
+  display flex
+  width 100%
+  background-color #A7C4D4
+  align-items center
+  height 15px
+  margin 10px auto
+  opacity 60%
+a
+  color #0056b3
+  &:hover
+    text-decoration none
+    color #0076b2
+.menu
+  display flex
+  width 100%
+  text-align center
+  justify-content center
+  //border solid thin
+  &-item
+    width 100%
+    transition 0.5s
+    &:hover
+      transform scale(1.2)
+      text-decoration none
+@media (max-width: 600px)
+  h1
+    title(34px, 15px)
+  h2
+    title(26px, 10px)
+  body
+    font-size 16px
+  .line
+    height 10px
+  .menu
+    flex-wrap wrap
+    transition 0.5s
+    &-item
+      width 49.9%
+
+.OurWorks
+  .block1
+    display flex
+    width 95%
+    text-align center
+    justify-content center
+    flex-wrap wrap
+    margin 0px auto
+    &-item
+      width 33.33%
+  img
+    width 100%
+    padding 10px
+    //border solid 5px #A7C4D4
+  @media (max-width: 600px)
+    .block1
+      flex-direction column
+      &-item
+        width 100%
+
+.AboutUs
+  .block1
+    display block
+    width 96%
+    text-align center
+    justify-content center
+    margin 0px auto
+    &-item1
+      float left
+      width 48%
+    &-item2
+      margin 0px 15px
+      padding 0px 10px 10px 10px
+  img
+    width 100%
+    padding 15px
+  @media (max-width: 600px)
+    .block1
+      display flex
+      flex-direction column
+      &-item1
+        order 2
+        clear all
+        width 100%
+
+.Masters
+  .block1
+    display flex
+    width 96%
+    text-align center
+    justify-content center
+    margin 0px auto
+    p
+      text-align center
+      text-indent 0px
+    &-item
+      width 32%
+      //border solid thin
+    img
+      width 100%
+      padding 15px
+  @media (max-width: 600px)
+    .block1
+      flex-direction column
+      &-item
+        width 80%
+        margin 0px auto
+
+.MasterEkaterina
+  masters()
+.MasterAlex
+  masters()
+.MasterMarina
+  masters()
+
+.Services
+  .block1
+    display block
+    width 90%
+    text-align center
+    justify-content center
+    margin 0px auto
+    &-item1
+      float right
+      width 44.99%
+    img
+      width 100%
+      opacity 90%
+      padding 0px 0px 25px 0px
+  form
+    width 95%
+    margin 0px auto
+    //border solid thin
+    p
+      text-indent 0px
+  table
+    width 90%
+    margin 0px auto
+    tr
+      text-align center
+      th, td
+        border solid thin
+  .remark
+    p
+      padding 15px 15px 0px 15px
+  @media (max-width: 600px)
+    .block1
+      flex-direction column
+      &-item1
+        clear all
+        width 100%
+      &-item2
+        width 90%
+        margin 0px auto
+      img
+        width 90%
+    .remark
+      p
+        text-indent 0px
